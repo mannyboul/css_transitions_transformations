@@ -98,6 +98,7 @@ p {
 	color: #fff;
 	background: #4a89ca;
 	transition-duration: .4s;
+	transition-property: background;
 }
 
 .button:hover {
@@ -112,7 +113,9 @@ p {
   Photo Overlay Transitions
 ==================================== */
 
-
+.photo-overlay:hover {
+	opacity: 1;
+}
 
 /* ---- Photo Overlay ---- */
 .photo-overlay {
@@ -129,6 +132,10 @@ p {
 	justify-content: center;
 	align-items: center;
 	background: rgba(0,0,0, .65);
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: .5s;
+
 }
 /* ---- Float clearfix ---- */
 
